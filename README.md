@@ -41,15 +41,23 @@ Building the onchain economy with @base. Fishing is just the start. 🐟 Develop
    ```bash
    git clone https://github.com/Rambeboy/fishfrenzy-bot.git && cd fishfrenzy-bot
    ```
+
 2. Install dependencies:
    ```bash
    npm install
    ```
-3. Setup to create accounts and get Tokens:
+
+3. Configure the proxy:
+   ```bash
+   nano proxy.txt
+   ```
+
+4. Setup to create accounts and get Tokens:
    ```bash
    npm run setup
    ```
-4. Run The Script:
+
+5. Run The Script:
    ```bash
    npm run start
    ```
