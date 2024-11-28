@@ -1,1 +1,120 @@
-(function(_0x777bcf,_0x49096c){const _0x2123ff=_0x1f2c,_0x534b37=_0x777bcf();while(!![]){try{const _0x4cc913=-parseInt(_0x2123ff(0xb8))/0x1*(-parseInt(_0x2123ff(0xbb))/0x2)+-parseInt(_0x2123ff(0xbf))/0x3*(parseInt(_0x2123ff(0xc2))/0x4)+-parseInt(_0x2123ff(0xc7))/0x5*(-parseInt(_0x2123ff(0xbd))/0x6)+-parseInt(_0x2123ff(0xc6))/0x7*(parseInt(_0x2123ff(0xb3))/0x8)+-parseInt(_0x2123ff(0xb6))/0x9*(-parseInt(_0x2123ff(0xb7))/0xa)+parseInt(_0x2123ff(0xcf))/0xb+-parseInt(_0x2123ff(0xc5))/0xc;if(_0x4cc913===_0x49096c)break;else _0x534b37['push'](_0x534b37['shift']());}catch(_0x2dd637){_0x534b37['push'](_0x534b37['shift']());}}}(_0x11b7,0x793ca));import _0x43d106 from'node-fetch';import{createProxyAgent}from'./proxy.js';async function fetchWithProxy(_0x1cc3a6,_0x56d7f1,_0x7c866f){const _0x176874=_0x1f2c;try{const _0x466af4=_0x7c866f?createProxyAgent(_0x7c866f):null,_0x24feb2={..._0x56d7f1,'agent':_0x466af4},_0x5b4865=await _0x43d106(_0x1cc3a6,_0x24feb2);if(!_0x5b4865['ok'])throw new Error(_0x176874(0xbe)+_0x5b4865[_0x176874(0xcb)]+':\x20'+_0x5b4865[_0x176874(0xc8)]);return await _0x5b4865['json']();}catch(_0x3dee1a){console[_0x176874(0xc0)]('Error\x20during\x20fetch\x20'+_0x1cc3a6+':',_0x3dee1a[_0x176874(0xb5)]);}}export async function getUserInfo(_0x5de4c4,_0x34e48e){const _0x21ed6d=_0x1f2c,_0x13a981=_0x21ed6d(0xcd);try{return await fetchWithProxy(_0x13a981,{'method':'GET','headers':{'Authorization':'Bearer\x20'+_0x5de4c4}},_0x34e48e);}catch(_0x5db735){return null;}}export async function useItem(_0x37d608,_0x3632cf,_0x38fda9){const _0x4aab3f=_0x1f2c,_0x5bcfc2='https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/items/66b1f692aaa0b594511c2db2/use?userId='+_0x38fda9;try{return await fetchWithProxy(_0x5bcfc2,{'method':'GET','headers':{'Authorization':_0x4aab3f(0xbc)+_0x37d608}},_0x3632cf);}catch(_0x34f2b2){return console[_0x4aab3f(0xc0)](_0x4aab3f(0xb4),_0x34f2b2),null;}}export async function buyFishing(_0x4b6e3c,_0x1b0055,_0x18ea60){const _0x3b3c96=_0x1f2c,_0x41ea54='https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/items/66b1f692aaa0b594511c2db2/buy?userId='+_0x18ea60+_0x3b3c96(0xc4);try{return await fetchWithProxy(_0x41ea54,{'method':_0x3b3c96(0xc9),'headers':{'Authorization':_0x3b3c96(0xbc)+_0x4b6e3c}},_0x1b0055);}catch(_0x24c1eb){return console[_0x3b3c96(0xc0)](_0x3b3c96(0xb4),_0x24c1eb),null;}}export async function claimDailyReward(_0x3c53d5,_0x40edad){const _0x605550=_0x1f2c,_0x3af827=_0x605550(0xcc);try{return await fetchWithProxy(_0x3af827,{'method':_0x605550(0xc9),'headers':{'Authorization':_0x605550(0xbc)+_0x3c53d5}},_0x40edad);}catch(_0x41335f){return console[_0x605550(0xc0)]('Error\x20claiming\x20daily\x20reward:',_0x41335f),null;}}export async function completeTutorial(_0x3a0a65,_0x515271,_0x28e60a){const _0x4352c3=_0x1f2c,_0x3b02a7=_0x4352c3(0xc1)+_0x28e60a+_0x4352c3(0xca);try{const _0x3ba324=await fetchWithProxy(_0x3b02a7,{'method':'POST','headers':{'Content-Type':_0x4352c3(0xb9),'origin':'https://fishingfrenzy.co','Authorization':_0x4352c3(0xbc)+_0x3a0a65},'body':JSON[_0x4352c3(0xba)]({})},_0x515271);return _0x3ba324;}catch(_0xc7ece1){return console[_0x4352c3(0xc0)](_0x4352c3(0xb2),_0xc7ece1),null;}}function _0x1f2c(_0x198735,_0x558ae2){const _0x11b70b=_0x11b7();return _0x1f2c=function(_0x1f2c8a,_0x20ce75){_0x1f2c8a=_0x1f2c8a-0xb2;let _0x4098aa=_0x11b70b[_0x1f2c8a];return _0x4098aa;},_0x1f2c(_0x198735,_0x558ae2);}export async function getSocialQuests(_0x58493f,_0x32940a){const _0x470537=_0x1f2c,_0x5107bf=_0x470537(0xce);try{return await fetchWithProxy(_0x5107bf,{'method':_0x470537(0xc9),'headers':{'Authorization':'Bearer\x20'+_0x58493f,'Content-Type':_0x470537(0xb9)}},_0x32940a);}catch(_0xf2a010){return console['error']('Error\x20fetching\x20social\x20quests:',_0xf2a010),[];}}export async function verifyQuest(_0x39aed1,_0x982aee,_0x4c0fce){const _0xd8b4d9=_0x1f2c,_0x40220d=_0xd8b4d9(0xce)+_0x982aee+'/verify';try{return await fetchWithProxy(_0x40220d,{'method':_0xd8b4d9(0xc3),'headers':{'Content-Type':_0xd8b4d9(0xb9),'origin':'https://fishingfrenzy.co','Authorization':_0xd8b4d9(0xbc)+_0x39aed1},'body':JSON[_0xd8b4d9(0xba)]({})},_0x4c0fce);}catch(_0x2111aa){return console['error']('Error\x20verifying\x20quest:',_0x2111aa),null;}}function _0x11b7(){const _0x341bab=['6227771GtKwPd','Error\x20fetching\x20profile:','219376vMzimL','Error\x20fetching\x20user\x20info:','message','449352ipKFbJ','20EySQTT','2BVkAZv','application/json','stringify','334046CflsAQ','Bearer\x20','4258158mFSElm','HTTP\x20Error\x20','2267229XthrTV','error','https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/users/','4YXEoKa','POST','&quantity=1','4830996WWIEhz','14NmFRyL','5fnXiPb','statusText','GET','/complete-tutorial','status','https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/daily-rewards/claim','https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/users/me','https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/social-quests/'];_0x11b7=function(){return _0x341bab;};return _0x11b7();}
+import _0x43d106 from 'node-fetch';
+import { createProxyAgent } from '../utils/proxy.js';
+async function fetchWithProxy(_0x1cc3a6, _0x56d7f1, _0x7c866f) {
+  try {
+    const _0x466af4 = _0x7c866f ? createProxyAgent(_0x7c866f) : null;
+    const _0x24feb2 = {
+      ..._0x56d7f1,
+      'agent': _0x466af4
+    };
+    const _0x5b4865 = await _0x43d106(_0x1cc3a6, _0x24feb2);
+    if (!_0x5b4865.ok) {
+      throw new Error("HTTP Error " + _0x5b4865.status + ": " + _0x5b4865.statusText);
+    }
+    return await _0x5b4865.json();
+  } catch (_0x3dee1a) {
+    console.error("Error during fetch " + _0x1cc3a6 + ':', _0x3dee1a.message);
+  }
+}
+export async function getUserInfo(_0x5de4c4, _0x34e48e) {
+  try {
+    return await fetchWithProxy("https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/users/me", {
+      'method': 'GET',
+      'headers': {
+        'Authorization': "Bearer " + _0x5de4c4
+      }
+    }, _0x34e48e);
+  } catch (_0x5db735) {
+    return null;
+  }
+}
+export async function useItem(_0x37d608, _0x3632cf, _0x38fda9) {
+  const _0x5bcfc2 = 'https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/items/66b1f692aaa0b594511c2db2/use?userId=' + _0x38fda9;
+  try {
+    return await fetchWithProxy(_0x5bcfc2, {
+      'method': 'GET',
+      'headers': {
+        'Authorization': "Bearer " + _0x37d608
+      }
+    }, _0x3632cf);
+  } catch (_0x34f2b2) {
+    console.error("Error fetching user info:", _0x34f2b2);
+    return null;
+  }
+}
+export async function buyFishing(_0x4b6e3c, _0x1b0055, _0x18ea60) {
+  const _0x41ea54 = 'https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/items/66b1f692aaa0b594511c2db2/buy?userId=' + _0x18ea60 + "&quantity=1";
+  try {
+    return await fetchWithProxy(_0x41ea54, {
+      'method': "GET",
+      'headers': {
+        'Authorization': "Bearer " + _0x4b6e3c
+      }
+    }, _0x1b0055);
+  } catch (_0x24c1eb) {
+    console.error("Error fetching user info:", _0x24c1eb);
+    return null;
+  }
+}
+export async function claimDailyReward(_0x3c53d5, _0x40edad) {
+  try {
+    return await fetchWithProxy("https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/daily-rewards/claim", {
+      'method': "GET",
+      'headers': {
+        'Authorization': "Bearer " + _0x3c53d5
+      }
+    }, _0x40edad);
+  } catch (_0x41335f) {
+    console.error("Error claiming daily reward:", _0x41335f);
+    return null;
+  }
+}
+export async function completeTutorial(_0x3a0a65, _0x515271, _0x28e60a) {
+  const _0x3b02a7 = "https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/users/" + _0x28e60a + "/complete-tutorial";
+  try {
+    const _0x3ba324 = await fetchWithProxy(_0x3b02a7, {
+      'method': 'POST',
+      'headers': {
+        'Content-Type': "application/json",
+        'origin': 'https://fishingfrenzy.co',
+        'Authorization': "Bearer " + _0x3a0a65
+      },
+      'body': JSON.stringify({})
+    }, _0x515271);
+    return _0x3ba324;
+  } catch (_0xc7ece1) {
+    console.error("Error fetching profile:", _0xc7ece1);
+    return null;
+  }
+}
+export async function getSocialQuests(_0x58493f, _0x32940a) {
+  try {
+    return await fetchWithProxy("https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/social-quests/", {
+      'method': "GET",
+      'headers': {
+        'Authorization': "Bearer " + _0x58493f,
+        'Content-Type': "application/json"
+      }
+    }, _0x32940a);
+  } catch (_0xf2a010) {
+    console.error("Error fetching social quests:", _0xf2a010);
+    return [];
+  }
+}
+export async function verifyQuest(_0x39aed1, _0x982aee, _0x4c0fce) {
+  const _0x40220d = "https://fishing-frenzy-api-0c12a800fbfe.herokuapp.com/v1/social-quests/" + _0x982aee + '/verify';
+  try {
+    return await fetchWithProxy(_0x40220d, {
+      'method': "POST",
+      'headers': {
+        'Content-Type': "application/json",
+        'origin': 'https://fishingfrenzy.co',
+        'Authorization': "Bearer " + _0x39aed1
+      },
+      'body': JSON.stringify({})
+    }, _0x4c0fce);
+  } catch (_0x2111aa) {
+    console.error("Error verifying quest:", _0x2111aa);
+    return null;
+  }
+}
