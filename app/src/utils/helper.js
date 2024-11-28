@@ -1,1 +1,6 @@
-"\n            [+]============================================[+]\n            [+]=  Running Fishing Frenzy Beta Cli Version =[+]\n            [+]=          Author : Nofan Rambe            =[+]\n            [+]=          Welcome & Enjoy Sir!            =[+]\n            [+]============================================[+]            ";
+export const banner = `
+            [+]=============================================[+]           
+            [+]=  Running Fishing Frenzy BETA CLI Version  =[+]               
+            [+]=           Author : Nofan Rambe            =[+]
+            [+]=           Welcome & Enjoy Sir!            =[+]
+            [+]=============================================[+]`
