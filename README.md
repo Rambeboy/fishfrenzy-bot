@@ -2,11 +2,11 @@
 
 Building the onchain economy with @base. Fishing is just the start. 🐟 Developed by @gguncharted.
 
-- Twitter [Fishing Frenzy Co](https://x.com/fishingfrenzyco)
+- Twitter : [Fishing Frenzy Co](https://x.com/fishingfrenzyco)
 
-- Website [Fishing Frenzy](https://fishingfrenzy.co)
+- Website : [Fishing Frenzy](https://fishingfrenzy.co)
 
-![banner](image.png)
+![banner](assets/image.png)
 
 ## BOT FEATURE
 
