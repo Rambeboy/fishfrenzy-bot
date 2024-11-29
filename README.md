@@ -10,6 +10,7 @@ Building the onchain economy with @base. Fishing is just the start. 🐟 Develop
 
 ## BOT FEATURE
 
+- Auto Referral.
 - Register Accounts Using New Wallets.
 - Load Existing Tokens: Load pre-existing tokens if you already have account.
 - Auto Fishing.
@@ -60,6 +61,11 @@ Building the onchain economy with @base. Fishing is just the start. 🐟 Develop
 5. Run The Script:
    ```bash
    npm run start
+   ```
+
+6. Run auto referral:
+   ```bash
+   npm run autoreferral
    ```
 
 ## LICENSE
