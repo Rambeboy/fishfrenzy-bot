@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node app/index.js",
     "setup": "node config/setup.js",
-    "autoreff": "node config/autoreferral.js"
+    "autoreff": "node config/autoreff.js"
   },
   "repository": {
     "type": "git",
