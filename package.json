@@ -7,7 +7,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "node app/index.js",
-    "setup": "node config/setup.js"
+    "setup": "node config/setup.js",
+    "autoreff": "node config/autoreferral.js"
   },
   "repository": {
     "type": "git",
